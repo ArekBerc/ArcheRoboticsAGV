@@ -8,6 +8,9 @@
   <xacro:include filename="$(find at1_description)/urdf/at1.gazebo" />
   <xacro:include filename="$(find at1_description)/urdf/materials.xacro" />
   <xacro:include filename="$(find at1_description)/urdf/macros.xacro" />
+  <xacro:include filename="$(find at1_description)/urdf/_d435.urdf.xacro" />
+  <xacro:include filename="$(find at1_description)/urdf/_d435_imu_modules.urdf.xacro" />
+  <xacro:include filename="$(find at1_description)/urdf/_d435i.urdf.xacro" />
   <!--xacro:property name="r200_cam_rgb_px" value="0.05"/>
   <xacro:property name="r200_cam_rgb_py" value="0.018"/>
   <xacro:property name="r200_cam_rgb_pz" value="0.013"/>
@@ -198,13 +201,8 @@
 
   <!-- Realsense -->
 
-  <!--joint name="3dcamera_joint" type="fixed">
-    <origin xyz="0.22 -0.07 0.04" rpy="0 0 0"/>
-    <parent link="chassis"/>
-    <child link="camera_link"/>
-  </joint>
 
-  <link name="camera_link">
+  <!--link name="camera_link">
     <visual>
      <origin xyz="0 0 0" rpy="1.57 0 1.57"/>
       <geometry>
@@ -218,6 +216,15 @@
       </geometry>
     </collision>
   </link>
+
+
+  <joint name="3dcamera_joint" type="fixed">
+    <origin xyz="0.22 -0.07 0.04" rpy="0 0 0"/>
+    <parent link="chassis"/>
+    <child link="camera_link"/>
+  </joint>
+
+
 
   <joint name="camera_rgb_joint" type="fixed">
     <origin xyz="${r200_cam_rgb_px} ${r200_cam_rgb_py} ${r200_cam_rgb_pz}" rpy="0 0 0"/>
