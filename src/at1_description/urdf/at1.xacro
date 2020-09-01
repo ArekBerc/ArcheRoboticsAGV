@@ -2,22 +2,28 @@
 
 <robot name="at1" xmlns:xacro="http://www.ros.org/wiki/xacro">
 
-  <!--xacro:property name="cameraSize" value="0.05"/>
-  <xacro:property name="cameraMass" value="0.1"/-->
+  <xacro:property name="cameraSize" value="0.05"/>
+  <xacro:property name="cameraMass" value="0.1"/>
+
 
   <xacro:include filename="$(find at1_description)/urdf/at1.gazebo" />
   <xacro:include filename="$(find at1_description)/urdf/materials.xacro" />
   <xacro:include filename="$(find at1_description)/urdf/macros.xacro" />
-  <xacro:include filename="$(find at1_description)/urdf/_d435.urdf.xacro" />
-  <xacro:include filename="$(find at1_description)/urdf/_d435_imu_modules.urdf.xacro" />
-  <xacro:include filename="$(find at1_description)/urdf/_d435i.urdf.xacro" />
-  <!--xacro:property name="r200_cam_rgb_px" value="0.05"/>
+  <!--xacro:include filename="$(find at1_description)/urdf/kh.gazebo.xacro" /-->
+  <!--xacro:include filename="$(find at1_description)/urdf/_d435.urdf.xacro">
+    <sensor_d435 parent="frnt_cam_lnk"></sensor_d435>
+
+  </xacro:include-->
+
+
+  <xacro:property name="r200_cam_rgb_px" value="0.05"/>
   <xacro:property name="r200_cam_rgb_py" value="0.018"/>
   <xacro:property name="r200_cam_rgb_pz" value="0.013"/>
-  <xacro:property name="r200_cam_depth_offset" value="0.01"/-->
+  <xacro:property name="r200_cam_depth_offset" value="0.01"/>
 
 
 
+  <link name="base_link"/>
 
   <link name='chassis'>
     <pose>0 0 0.1 0 0 0</pose>
@@ -96,7 +102,11 @@
 
   </link>
 
-
+  <joint name="base_joint" type="fixed">
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <parent link="base_link"/>
+    <child link="chassis" />
+  </joint>
   <link name="left_wheel">
     <!--origin xyz="0.1 0.13 0.1" rpy="0 1.5707 1.5707"/-->
     <collision name="collision">
@@ -199,20 +209,46 @@
     </inertial>
   </link>
 
-  <!-- Realsense -->
 
-
-  <!--link name="camera_link">
+  <!--link name="frnt_cam_lnk">
     <visual>
-     <origin xyz="0 0 0" rpy="1.57 0 1.57"/>
+     <origin xyz="0.005 0.065 0.007" rpy="1.57 0 1.57"/>
       <geometry>
-       <mesh filename="$(find at1_description)/meshes/r200.dae"/>
+       <mesh filename="$(find at1_description)/meshes/d435.dae"/>
       </geometry>
     </visual>
     <collision>
-      <origin xyz="0.003 0.065 0.007" rpy="0 0 0"/>
+      <origin xyz="0.005 0.065 0.007" rpy="1.57 0 1.57"/>
       <geometry>
-        <box size="0.012 0.132 0.020"/>
+       <mesh filename="$(find at1_description)/meshes/d435.dae"/>
+      </geometry>
+    </collision>
+  </link>
+
+  <joint name="3dcamera_joint" type="fixed">
+    <origin xyz="0.22 -0.07 0.04" rpy="0 0 0"/>
+    <parent link="chassis"/>
+    <child link="frnt_cam_lnk"/>
+  </joint-->
+
+
+
+
+
+  <!-- Realsense -->
+
+
+  <link name="camera_link">
+    <visual>
+     <origin xyz="0.007 0.065 0.007" rpy="1.57 0 1.57"/>
+      <geometry>
+       <mesh filename="$(find at1_description)/meshes/d435.dae"/>
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0.007 0.065 0.007" rpy="1.57 0 1.57"/>
+      <geometry>
+       <mesh filename="$(find at1_description)/meshes/d435.dae"/>
       </geometry>
     </collision>
   </link>
@@ -252,7 +288,7 @@
     <parent link="camera_depth_frame"/>
     <child link="camera_depth_optical_frame"/>
   </joint>
-  <link name="camera_depth_optical_frame"/-->
+  <link name="camera_depth_optical_frame"/>
   
 
 
