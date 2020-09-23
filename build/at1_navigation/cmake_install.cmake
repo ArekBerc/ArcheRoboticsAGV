@@ -1,8 +1,8 @@
-# Install script for directory: /home/khaled/Tommy_ws/src/at1_navigation
+# Install script for directory: /home/khaled/feri_ws/src/at1_navigation
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/khaled/Tommy_ws/install")
+  set(CMAKE_INSTALL_PREFIX "/home/khaled/feri_ws/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -38,17 +38,17 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/khaled/Tommy_ws/build/at1_navigation/catkin_generated/installspace/at1_navigation.pc")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/khaled/feri_ws/build/at1_navigation/catkin_generated/installspace/at1_navigation.pc")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/at1_navigation/cmake" TYPE FILE FILES
-    "/home/khaled/Tommy_ws/build/at1_navigation/catkin_generated/installspace/at1_navigationConfig.cmake"
-    "/home/khaled/Tommy_ws/build/at1_navigation/catkin_generated/installspace/at1_navigationConfig-version.cmake"
+    "/home/khaled/feri_ws/build/at1_navigation/catkin_generated/installspace/at1_navigationConfig.cmake"
+    "/home/khaled/feri_ws/build/at1_navigation/catkin_generated/installspace/at1_navigationConfig-version.cmake"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/at1_navigation" TYPE FILE FILES "/home/khaled/Tommy_ws/src/at1_navigation/package.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/at1_navigation" TYPE FILE FILES "/home/khaled/feri_ws/src/at1_navigation/package.xml")
 endif()
 

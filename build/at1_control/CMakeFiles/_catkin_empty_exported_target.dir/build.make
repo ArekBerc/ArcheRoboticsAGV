@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/khaled/Tommy_ws/src
+CMAKE_SOURCE_DIR = /home/khaled/feri_ws/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/khaled/Tommy_ws/build
+CMAKE_BINARY_DIR = /home/khaled/feri_ws/build
 
 # Utility rule file for _catkin_empty_exported_target.
 
@@ -63,10 +63,10 @@ at1_control/CMakeFiles/_catkin_empty_exported_target.dir/build: _catkin_empty_ex
 .PHONY : at1_control/CMakeFiles/_catkin_empty_exported_target.dir/build
 
 at1_control/CMakeFiles/_catkin_empty_exported_target.dir/clean:
-	cd /home/khaled/Tommy_ws/build/at1_control && $(CMAKE_COMMAND) -P CMakeFiles/_catkin_empty_exported_target.dir/cmake_clean.cmake
+	cd /home/khaled/feri_ws/build/at1_control && $(CMAKE_COMMAND) -P CMakeFiles/_catkin_empty_exported_target.dir/cmake_clean.cmake
 .PHONY : at1_control/CMakeFiles/_catkin_empty_exported_target.dir/clean
 
 at1_control/CMakeFiles/_catkin_empty_exported_target.dir/depend:
-	cd /home/khaled/Tommy_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/khaled/Tommy_ws/src /home/khaled/Tommy_ws/src/at1_control /home/khaled/Tommy_ws/build /home/khaled/Tommy_ws/build/at1_control /home/khaled/Tommy_ws/build/at1_control/CMakeFiles/_catkin_empty_exported_target.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/khaled/feri_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/khaled/feri_ws/src /home/khaled/feri_ws/src/at1_control /home/khaled/feri_ws/build /home/khaled/feri_ws/build/at1_control /home/khaled/feri_ws/build/at1_control/CMakeFiles/_catkin_empty_exported_target.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : at1_control/CMakeFiles/_catkin_empty_exported_target.dir/depend
 

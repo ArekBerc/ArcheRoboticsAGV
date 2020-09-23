@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/khaled/Tommy_ws/src
+CMAKE_SOURCE_DIR = /home/khaled/feri_ws/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/khaled/Tommy_ws/build
+CMAKE_BINARY_DIR = /home/khaled/feri_ws/build
 
 # Utility rule file for controller_manager_msgs_generate_messages_cpp.
 
@@ -63,10 +63,10 @@ at1_description/CMakeFiles/controller_manager_msgs_generate_messages_cpp.dir/bui
 .PHONY : at1_description/CMakeFiles/controller_manager_msgs_generate_messages_cpp.dir/build
 
 at1_description/CMakeFiles/controller_manager_msgs_generate_messages_cpp.dir/clean:
-	cd /home/khaled/Tommy_ws/build/at1_description && $(CMAKE_COMMAND) -P CMakeFiles/controller_manager_msgs_generate_messages_cpp.dir/cmake_clean.cmake
+	cd /home/khaled/feri_ws/build/at1_description && $(CMAKE_COMMAND) -P CMakeFiles/controller_manager_msgs_generate_messages_cpp.dir/cmake_clean.cmake
 .PHONY : at1_description/CMakeFiles/controller_manager_msgs_generate_messages_cpp.dir/clean
 
 at1_description/CMakeFiles/controller_manager_msgs_generate_messages_cpp.dir/depend:
-	cd /home/khaled/Tommy_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/khaled/Tommy_ws/src /home/khaled/Tommy_ws/src/at1_description /home/khaled/Tommy_ws/build /home/khaled/Tommy_ws/build/at1_description /home/khaled/Tommy_ws/build/at1_description/CMakeFiles/controller_manager_msgs_generate_messages_cpp.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/khaled/feri_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/khaled/feri_ws/src /home/khaled/feri_ws/src/at1_description /home/khaled/feri_ws/build /home/khaled/feri_ws/build/at1_description /home/khaled/feri_ws/build/at1_description/CMakeFiles/controller_manager_msgs_generate_messages_cpp.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : at1_description/CMakeFiles/controller_manager_msgs_generate_messages_cpp.dir/depend
 

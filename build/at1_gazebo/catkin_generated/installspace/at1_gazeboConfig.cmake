@@ -67,14 +67,14 @@ set(at1_gazebo_CONFIG_INCLUDED TRUE)
 
 # set variables for source/devel/install prefixes
 if("FALSE" STREQUAL "TRUE")
-  set(at1_gazebo_SOURCE_PREFIX /home/khaled/Tommy_ws/src/at1_gazebo)
-  set(at1_gazebo_DEVEL_PREFIX /home/khaled/Tommy_ws/devel)
+  set(at1_gazebo_SOURCE_PREFIX /home/khaled/feri_ws/src/at1_gazebo)
+  set(at1_gazebo_DEVEL_PREFIX /home/khaled/feri_ws/devel)
   set(at1_gazebo_INSTALL_PREFIX "")
   set(at1_gazebo_PREFIX ${at1_gazebo_DEVEL_PREFIX})
 else()
   set(at1_gazebo_SOURCE_PREFIX "")
   set(at1_gazebo_DEVEL_PREFIX "")
-  set(at1_gazebo_INSTALL_PREFIX /home/khaled/Tommy_ws/install)
+  set(at1_gazebo_INSTALL_PREFIX /home/khaled/feri_ws/install)
   set(at1_gazebo_PREFIX ${at1_gazebo_INSTALL_PREFIX})
 endif()
 
@@ -154,7 +154,7 @@ foreach(library ${libraries})
     set(lib_path "")
     set(lib "${library}-NOTFOUND")
     # since the path where the library is found is returned we have to iterate over the paths manually
-    foreach(path /home/khaled/Tommy_ws/install/lib;/home/khaled/task_auc/devel/lib;/home/khaled/Tommy_ws/devel/lib;/opt/ros/melodic/lib)
+    foreach(path /home/khaled/feri_ws/install/lib;/home/khaled/feri_ws/devel/lib;/opt/ros/melodic/lib)
       find_library(lib ${library}
         PATHS ${path}
         NO_DEFAULT_PATH NO_CMAKE_FIND_ROOT_PATH)

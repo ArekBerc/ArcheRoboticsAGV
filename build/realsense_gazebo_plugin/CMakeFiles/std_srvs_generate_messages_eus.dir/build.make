@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/khaled/Tommy_ws/src
+CMAKE_SOURCE_DIR = /home/khaled/feri_ws/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/khaled/Tommy_ws/build
+CMAKE_BINARY_DIR = /home/khaled/feri_ws/build
 
 # Utility rule file for std_srvs_generate_messages_eus.
 
@@ -63,10 +63,10 @@ realsense_gazebo_plugin/CMakeFiles/std_srvs_generate_messages_eus.dir/build: std
 .PHONY : realsense_gazebo_plugin/CMakeFiles/std_srvs_generate_messages_eus.dir/build
 
 realsense_gazebo_plugin/CMakeFiles/std_srvs_generate_messages_eus.dir/clean:
-	cd /home/khaled/Tommy_ws/build/realsense_gazebo_plugin && $(CMAKE_COMMAND) -P CMakeFiles/std_srvs_generate_messages_eus.dir/cmake_clean.cmake
+	cd /home/khaled/feri_ws/build/realsense_gazebo_plugin && $(CMAKE_COMMAND) -P CMakeFiles/std_srvs_generate_messages_eus.dir/cmake_clean.cmake
 .PHONY : realsense_gazebo_plugin/CMakeFiles/std_srvs_generate_messages_eus.dir/clean
 
 realsense_gazebo_plugin/CMakeFiles/std_srvs_generate_messages_eus.dir/depend:
-	cd /home/khaled/Tommy_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/khaled/Tommy_ws/src /home/khaled/Tommy_ws/src/realsense_gazebo_plugin /home/khaled/Tommy_ws/build /home/khaled/Tommy_ws/build/realsense_gazebo_plugin /home/khaled/Tommy_ws/build/realsense_gazebo_plugin/CMakeFiles/std_srvs_generate_messages_eus.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/khaled/feri_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/khaled/feri_ws/src /home/khaled/feri_ws/src/realsense_gazebo_plugin /home/khaled/feri_ws/build /home/khaled/feri_ws/build/realsense_gazebo_plugin /home/khaled/feri_ws/build/realsense_gazebo_plugin/CMakeFiles/std_srvs_generate_messages_eus.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : realsense_gazebo_plugin/CMakeFiles/std_srvs_generate_messages_eus.dir/depend
 

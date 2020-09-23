@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/khaled/Tommy_ws/src
+CMAKE_SOURCE_DIR = /home/khaled/feri_ws/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/khaled/Tommy_ws/build
+CMAKE_BINARY_DIR = /home/khaled/feri_ws/build
 
 # Utility rule file for clean_test_results_openni_launch.
 
@@ -54,7 +54,7 @@ CMAKE_BINARY_DIR = /home/khaled/Tommy_ws/build
 include openni_camera/openni_launch/CMakeFiles/clean_test_results_openni_launch.dir/progress.make
 
 openni_camera/openni_launch/CMakeFiles/clean_test_results_openni_launch:
-	cd /home/khaled/Tommy_ws/build/openni_camera/openni_launch && /usr/bin/python2 /opt/ros/melodic/share/catkin/cmake/test/remove_test_results.py /home/khaled/Tommy_ws/build/test_results/openni_launch
+	cd /home/khaled/feri_ws/build/openni_camera/openni_launch && /usr/bin/python2 /opt/ros/melodic/share/catkin/cmake/test/remove_test_results.py /home/khaled/feri_ws/build/test_results/openni_launch
 
 clean_test_results_openni_launch: openni_camera/openni_launch/CMakeFiles/clean_test_results_openni_launch
 clean_test_results_openni_launch: openni_camera/openni_launch/CMakeFiles/clean_test_results_openni_launch.dir/build.make
@@ -67,10 +67,10 @@ openni_camera/openni_launch/CMakeFiles/clean_test_results_openni_launch.dir/buil
 .PHONY : openni_camera/openni_launch/CMakeFiles/clean_test_results_openni_launch.dir/build
 
 openni_camera/openni_launch/CMakeFiles/clean_test_results_openni_launch.dir/clean:
-	cd /home/khaled/Tommy_ws/build/openni_camera/openni_launch && $(CMAKE_COMMAND) -P CMakeFiles/clean_test_results_openni_launch.dir/cmake_clean.cmake
+	cd /home/khaled/feri_ws/build/openni_camera/openni_launch && $(CMAKE_COMMAND) -P CMakeFiles/clean_test_results_openni_launch.dir/cmake_clean.cmake
 .PHONY : openni_camera/openni_launch/CMakeFiles/clean_test_results_openni_launch.dir/clean
 
 openni_camera/openni_launch/CMakeFiles/clean_test_results_openni_launch.dir/depend:
-	cd /home/khaled/Tommy_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/khaled/Tommy_ws/src /home/khaled/Tommy_ws/src/openni_camera/openni_launch /home/khaled/Tommy_ws/build /home/khaled/Tommy_ws/build/openni_camera/openni_launch /home/khaled/Tommy_ws/build/openni_camera/openni_launch/CMakeFiles/clean_test_results_openni_launch.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/khaled/feri_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/khaled/feri_ws/src /home/khaled/feri_ws/src/openni_camera/openni_launch /home/khaled/feri_ws/build /home/khaled/feri_ws/build/openni_camera/openni_launch /home/khaled/feri_ws/build/openni_camera/openni_launch/CMakeFiles/clean_test_results_openni_launch.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : openni_camera/openni_launch/CMakeFiles/clean_test_results_openni_launch.dir/depend
 

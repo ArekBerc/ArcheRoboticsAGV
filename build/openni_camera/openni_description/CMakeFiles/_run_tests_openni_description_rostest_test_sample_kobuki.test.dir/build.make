@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/khaled/Tommy_ws/src
+CMAKE_SOURCE_DIR = /home/khaled/feri_ws/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/khaled/Tommy_ws/build
+CMAKE_BINARY_DIR = /home/khaled/feri_ws/build
 
 # Utility rule file for _run_tests_openni_description_rostest_test_sample_kobuki.test.
 
@@ -54,7 +54,7 @@ CMAKE_BINARY_DIR = /home/khaled/Tommy_ws/build
 include openni_camera/openni_description/CMakeFiles/_run_tests_openni_description_rostest_test_sample_kobuki.test.dir/progress.make
 
 openni_camera/openni_description/CMakeFiles/_run_tests_openni_description_rostest_test_sample_kobuki.test:
-	cd /home/khaled/Tommy_ws/build/openni_camera/openni_description && ../../catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/catkin/cmake/test/run_tests.py /home/khaled/Tommy_ws/build/test_results/openni_description/rostest-test_sample_kobuki.xml "/usr/bin/python2 /opt/ros/melodic/share/rostest/cmake/../../../bin/rostest --pkgdir=/home/khaled/Tommy_ws/src/openni_camera/openni_description --package=openni_description --results-filename test_sample_kobuki.xml --results-base-dir \"/home/khaled/Tommy_ws/build/test_results\" /home/khaled/Tommy_ws/src/openni_camera/openni_description/test/sample_kobuki.test "
+	cd /home/khaled/feri_ws/build/openni_camera/openni_description && ../../catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/catkin/cmake/test/run_tests.py /home/khaled/feri_ws/build/test_results/openni_description/rostest-test_sample_kobuki.xml "/usr/bin/python2 /opt/ros/melodic/share/rostest/cmake/../../../bin/rostest --pkgdir=/home/khaled/feri_ws/src/openni_camera/openni_description --package=openni_description --results-filename test_sample_kobuki.xml --results-base-dir \"/home/khaled/feri_ws/build/test_results\" /home/khaled/feri_ws/src/openni_camera/openni_description/test/sample_kobuki.test "
 
 _run_tests_openni_description_rostest_test_sample_kobuki.test: openni_camera/openni_description/CMakeFiles/_run_tests_openni_description_rostest_test_sample_kobuki.test
 _run_tests_openni_description_rostest_test_sample_kobuki.test: openni_camera/openni_description/CMakeFiles/_run_tests_openni_description_rostest_test_sample_kobuki.test.dir/build.make
@@ -67,10 +67,10 @@ openni_camera/openni_description/CMakeFiles/_run_tests_openni_description_rostes
 .PHONY : openni_camera/openni_description/CMakeFiles/_run_tests_openni_description_rostest_test_sample_kobuki.test.dir/build
 
 openni_camera/openni_description/CMakeFiles/_run_tests_openni_description_rostest_test_sample_kobuki.test.dir/clean:
-	cd /home/khaled/Tommy_ws/build/openni_camera/openni_description && $(CMAKE_COMMAND) -P CMakeFiles/_run_tests_openni_description_rostest_test_sample_kobuki.test.dir/cmake_clean.cmake
+	cd /home/khaled/feri_ws/build/openni_camera/openni_description && $(CMAKE_COMMAND) -P CMakeFiles/_run_tests_openni_description_rostest_test_sample_kobuki.test.dir/cmake_clean.cmake
 .PHONY : openni_camera/openni_description/CMakeFiles/_run_tests_openni_description_rostest_test_sample_kobuki.test.dir/clean
 
 openni_camera/openni_description/CMakeFiles/_run_tests_openni_description_rostest_test_sample_kobuki.test.dir/depend:
-	cd /home/khaled/Tommy_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/khaled/Tommy_ws/src /home/khaled/Tommy_ws/src/openni_camera/openni_description /home/khaled/Tommy_ws/build /home/khaled/Tommy_ws/build/openni_camera/openni_description /home/khaled/Tommy_ws/build/openni_camera/openni_description/CMakeFiles/_run_tests_openni_description_rostest_test_sample_kobuki.test.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/khaled/feri_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/khaled/feri_ws/src /home/khaled/feri_ws/src/openni_camera/openni_description /home/khaled/feri_ws/build /home/khaled/feri_ws/build/openni_camera/openni_description /home/khaled/feri_ws/build/openni_camera/openni_description/CMakeFiles/_run_tests_openni_description_rostest_test_sample_kobuki.test.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : openni_camera/openni_description/CMakeFiles/_run_tests_openni_description_rostest_test_sample_kobuki.test.dir/depend
 

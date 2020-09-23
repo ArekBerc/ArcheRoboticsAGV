@@ -2,28 +2,41 @@
 
 <robot name="at1" xmlns:xacro="http://www.ros.org/wiki/xacro">
 
-  <xacro:property name="cameraSize" value="0.05"/>
-  <xacro:property name="cameraMass" value="0.1"/>
-
 
   <xacro:include filename="$(find at1_description)/urdf/at1.gazebo" />
   <xacro:include filename="$(find at1_description)/urdf/materials.xacro" />
   <xacro:include filename="$(find at1_description)/urdf/macros.xacro" />
-  <!--xacro:include filename="$(find at1_description)/urdf/kh.gazebo.xacro" /-->
-  <!--xacro:include filename="$(find at1_description)/urdf/_d435.urdf.xacro">
-    <sensor_d435 parent="frnt_cam_lnk"></sensor_d435>
+  <xacro:include filename="$(find at1_description)/urdf/_d435ii.urdf.xacro"/>
+  <xacro:include filename="$(find at1_description)/urdf/imu.urdf.xacro" />
+  <xacro:include filename="$(find at1_description)/urdf/_materials.urdf.xacro" />
+  <xacro:include filename="$(find at1_description)/urdf/_usb_plug.urdf.xacro" />
+  <xacro:include filename="$(find at1_description)/urdf/_d435.gazebo.xacro" />
 
-  </xacro:include-->
+  <xacro:arg name = "camera_topics" default="camera" />
+  <xacro:property name="M_PI" value="3.1415926535897931" />
+
+        <xacro:property name="imu_size_x" value="0.004" />
+        <xacro:property name="imu_size_y" value="0.006" />
+        <xacro:property name="imu_size_z" value="0.001" />
+        <xacro:property name="imu_mass" value="0.00001" />
+        <xacro:property name="imu_offset_x" value="0.0095" />
+        <xacro:property name="imu_offset_y" value="-0.029" />
+        <xacro:property name="imu_offset_z" value="0.0021" />
+
+  <!--xacro:property name="d435_cam_depth_to_left_ir_offset" value="0.0"/>
+  <xacro:property name="d435_cam_depth_to_right_ir_offset" value="-0.050"/>
+  <xacro:property name="d435_cam_depth_to_color_offset" value="0.015"/>
+  <xacro:property name="d435_cam_width" value="0.090"/>
+  <xacro:property name="d435_cam_height" value="0.025"/>
+  <xacro:property name="d435_cam_depth" value="0.02505"/>
+  <xacro:property name="d435_cam_mount_from_center_offset" value="0.0149"/>
+
+  <xacro:property name="d435_cam_depth_px" value="${d435_cam_mount_from_center_offset}"/>
+  <xacro:property name="d435_cam_depth_py" value="0.0175"/>
+  <xacro:property name="d435_cam_depth_pz" value="${d435_cam_height/2}"/-->
 
 
-  <xacro:property name="r200_cam_rgb_px" value="0.05"/>
-  <xacro:property name="r200_cam_rgb_py" value="0.018"/>
-  <xacro:property name="r200_cam_rgb_pz" value="0.013"/>
-  <xacro:property name="r200_cam_depth_offset" value="0.01"/>
-
-
-
-  <link name="base_link"/>
+  <link name="robot_footprint"/>
 
   <link name='chassis'>
     <pose>0 0 0.1 0 0 0</pose>
@@ -104,11 +117,11 @@
 
   <joint name="base_joint" type="fixed">
     <origin xyz="0 0 0" rpy="0 0 0"/>
-    <parent link="base_link"/>
+    <parent link="robot_footprint"/>
     <child link="chassis" />
   </joint>
   <link name="left_wheel">
-    <!--origin xyz="0.1 0.13 0.1" rpy="0 1.5707 1.5707"/-->
+    <origin xyz="0.1 0.13 0.1" rpy="0 1.5707 1.5707"/>
     <collision name="collision">
       <origin xyz="0 0 0" rpy="0 1.5707 1.5707"/>
       <geometry>
@@ -133,7 +146,7 @@
   </link>
 
   <link name="right_wheel">
-    <!--origin xyz="0.1 -0.13 0.1" rpy="0 1.5707 1.5707"/-->
+    <origin xyz="0.1 -0.13 0.1" rpy="0 1.5707 1.5707"/>
     <collision name="collision">
       <origin xyz="0 0 0" rpy="0 1.5707 1.5707"/>
       <geometry>
@@ -210,47 +223,60 @@
   </link>
 
 
-  <!--link name="frnt_cam_lnk">
-    <visual>
-     <origin xyz="0.005 0.065 0.007" rpy="1.57 0 1.57"/>
-      <geometry>
-       <mesh filename="$(find at1_description)/meshes/d435.dae"/>
-      </geometry>
-    </visual>
-    <collision>
-      <origin xyz="0.005 0.065 0.007" rpy="1.57 0 1.57"/>
-      <geometry>
-       <mesh filename="$(find at1_description)/meshes/d435.dae"/>
-      </geometry>
-    </collision>
-  </link>
-
-  <joint name="3dcamera_joint" type="fixed">
-    <origin xyz="0.22 -0.07 0.04" rpy="0 0 0"/>
-    <parent link="chassis"/>
-    <child link="frnt_cam_lnk"/>
-  </joint-->
 
 
-
+        <link name="imu_link">
+            <inertial>
+                <origin xyz="0 0 0" rpy="0 0 0" />
+                <mass value="${imu_mass}" />
+                <inertia ixx="${imu_mass*(imu_size_y*imu_size_y+imu_size_z*imu_size_z)}" ixy="0" ixz="0"
+                         iyy="${imu_mass*(imu_size_x*imu_size_x+imu_size_z*imu_size_z)}" iyz="0"
+                         izz="${imu_mass*(imu_size_x*imu_size_x+imu_size_y*imu_size_y)}" />
+            </inertial>
+            <visual>
+                <origin xyz="0 0 0" rpy="0 0 0" />
+                <geometry>
+                    <box size="${imu_size_x} ${imu_size_y} ${imu_size_z}" />
+                </geometry>
+                <material name="red" />
+            </visual>
+            <collision>
+                <origin xyz="0 0 0" rpy="0 0 0" />
+                <geometry>
+                    <box size="${imu_size_x} ${imu_size_y} ${imu_size_z}" />
+                </geometry>
+            </collision>
+        </link>
+        <joint name="imu_joint" type="fixed">
+            <parent link="chassis" />
+            <child link="imu_link" />
+            <origin rpy="0 0 0" xyz="${imu_offset_x} ${imu_offset_y} ${imu_offset_z}"/>
+        </joint>
 
 
   <!-- Realsense -->
 
-
-  <link name="camera_link">
+  <!--link name="camera_link">
     <visual>
-     <origin xyz="0.007 0.065 0.007" rpy="1.57 0 1.57"/>
+     <origin xyz="0.007 0.065 0.007" rpy="${M_PI/2} 0 ${M_PI/2}"/>
       <geometry>
-       <mesh filename="$(find at1_description)/meshes/d435.dae"/>
+       <mesh filename="$(find at1_description)/meshes/d435.dae"/-->
+       <!--box size="${d435_cam_width} ${d435_cam_height} ${d435_cam_depth}"/>
       </geometry>
     </visual>
     <collision>
       <origin xyz="0.007 0.065 0.007" rpy="1.57 0 1.57"/>
       <geometry>
-       <mesh filename="$(find at1_description)/meshes/d435.dae"/>
+       <mesh filename="$(find at1_description)/meshes/d435.dae"/-->
+       <!--box size="${d435_cam_width} ${d435_cam_height} ${d435_cam_depth}"/>
       </geometry>
     </collision>
+    <inertial>
+        < The following are not reliable values, and should not be used for modeling >
+      <mass value="0.564" />
+      <origin xyz="0 0 0" />
+      <inertia ixx="0.003881243" ixy="0.0" ixz="0.0" iyy="0.000498940" iyz="0.0" izz="0.003879257" />
+    </inertial>
   </link>
 
 
@@ -258,38 +284,14 @@
     <origin xyz="0.22 -0.07 0.04" rpy="0 0 0"/>
     <parent link="chassis"/>
     <child link="camera_link"/>
-  </joint>
+  </joint-->
 
 
+    <sensor_d435i parent="chassis" name = "$(arg camera_topics)" use_nominal_extrinsics = "true" >
+     <origin xyz="0.007 0.065 0.012" rpy="${M_PI/2} ${M_PI} 2.9"/>
+    </sensor_d435i>
 
-  <joint name="camera_rgb_joint" type="fixed">
-    <origin xyz="${r200_cam_rgb_px} ${r200_cam_rgb_py} ${r200_cam_rgb_pz}" rpy="0 0 0"/>
-    <parent link="camera_link"/>
-    <child link="camera_rgb_frame"/>
-  </joint>
-  <link name="camera_rgb_frame"/>
 
-  <joint name="camera_rgb_optical_joint" type="fixed">
-    <origin xyz="0 0 0" rpy="-1.57 0 -1.57"/>
-    <parent link="camera_rgb_frame"/>
-    <child link="camera_rgb_optical_frame"/>
-  </joint>
-  <link name="camera_rgb_optical_frame"/>
-
-  <joint name="camera_depth_joint" type="fixed">
-    <origin xyz="${r200_cam_rgb_px} ${r200_cam_rgb_py + r200_cam_depth_offset} ${r200_cam_rgb_pz}" rpy="0 0 0"/>
-    <parent link="camera_link"/>
-    <child link="camera_depth_frame"/>
-  </joint>
-  <link name="camera_depth_frame"/>
-
-  <joint name="camera_depth_optical_joint" type="fixed">
-    <origin xyz="0 0 0" rpy="-1.57 0 -1.57"/>
-    <parent link="camera_depth_frame"/>
-    <child link="camera_depth_optical_frame"/>
-  </joint>
-  <link name="camera_depth_optical_frame"/>
-  
 
 
 </robot>

@@ -67,14 +67,14 @@ set(openni_camera_CONFIG_INCLUDED TRUE)
 
 # set variables for source/devel/install prefixes
 if("TRUE" STREQUAL "TRUE")
-  set(openni_camera_SOURCE_PREFIX /home/khaled/Tommy_ws/src/openni_camera/openni_camera)
-  set(openni_camera_DEVEL_PREFIX /home/khaled/Tommy_ws/devel)
+  set(openni_camera_SOURCE_PREFIX /home/khaled/feri_ws/src/openni_camera/openni_camera)
+  set(openni_camera_DEVEL_PREFIX /home/khaled/feri_ws/devel)
   set(openni_camera_INSTALL_PREFIX "")
   set(openni_camera_PREFIX ${openni_camera_DEVEL_PREFIX})
 else()
   set(openni_camera_SOURCE_PREFIX "")
   set(openni_camera_DEVEL_PREFIX "")
-  set(openni_camera_INSTALL_PREFIX /home/khaled/Tommy_ws/install)
+  set(openni_camera_INSTALL_PREFIX /home/khaled/feri_ws/install)
   set(openni_camera_PREFIX ${openni_camera_INSTALL_PREFIX})
 endif()
 
@@ -91,9 +91,9 @@ endif()
 # flag project as catkin-based to distinguish if a find_package()-ed project is a catkin project
 set(openni_camera_FOUND_CATKIN_PROJECT TRUE)
 
-if(NOT "/home/khaled/Tommy_ws/devel/include;/home/khaled/Tommy_ws/src/openni_camera/openni_camera/include;/usr/include;/usr/include/ni " STREQUAL " ")
+if(NOT "/home/khaled/feri_ws/devel/include;/home/khaled/feri_ws/src/openni_camera/openni_camera/include;/usr/include;/usr/include/ni " STREQUAL " ")
   set(openni_camera_INCLUDE_DIRS "")
-  set(_include_dirs "/home/khaled/Tommy_ws/devel/include;/home/khaled/Tommy_ws/src/openni_camera/openni_camera/include;/usr/include;/usr/include/ni")
+  set(_include_dirs "/home/khaled/feri_ws/devel/include;/home/khaled/feri_ws/src/openni_camera/openni_camera/include;/usr/include;/usr/include/ni")
   if(NOT " " STREQUAL " ")
     set(_report "Check the issue tracker '' and consider creating a ticket if the problem has not been reported yet.")
   elseif(NOT "http://www.ros.org/wiki/openni_camera " STREQUAL " ")
@@ -110,7 +110,7 @@ if(NOT "/home/khaled/Tommy_ws/devel/include;/home/khaled/Tommy_ws/src/openni_cam
         message(FATAL_ERROR "Project 'openni_camera' specifies '${idir}' as an include dir, which is not found.  It does not exist in '${include}'.  ${_report}")
       endif()
     else()
-      message(FATAL_ERROR "Project 'openni_camera' specifies '${idir}' as an include dir, which is not found.  It does neither exist as an absolute directory nor in '/home/khaled/Tommy_ws/src/openni_camera/openni_camera/${idir}'.  ${_report}")
+      message(FATAL_ERROR "Project 'openni_camera' specifies '${idir}' as an include dir, which is not found.  It does neither exist as an absolute directory nor in '/home/khaled/feri_ws/src/openni_camera/openni_camera/${idir}'.  ${_report}")
     endif()
     _list_append_unique(openni_camera_INCLUDE_DIRS ${include})
   endforeach()
@@ -154,7 +154,7 @@ foreach(library ${libraries})
     set(lib_path "")
     set(lib "${library}-NOTFOUND")
     # since the path where the library is found is returned we have to iterate over the paths manually
-    foreach(path /home/khaled/Tommy_ws/devel/lib;/home/khaled/task_auc/devel/lib;/home/khaled/Tommy_ws/devel/lib;/opt/ros/melodic/lib)
+    foreach(path /home/khaled/feri_ws/devel/lib;/home/khaled/feri_ws/devel/lib;/opt/ros/melodic/lib)
       find_library(lib ${library}
         PATHS ${path}
         NO_DEFAULT_PATH NO_CMAKE_FIND_ROOT_PATH)

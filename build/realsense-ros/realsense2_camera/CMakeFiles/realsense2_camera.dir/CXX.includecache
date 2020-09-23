@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/khaled/Tommy_ws/devel/include/realsense2_camera/Extrinsics.h
+/home/khaled/feri_ws/devel/include/realsense2_camera/Extrinsics.h
 string
 -
 vector
@@ -24,7 +24,7 @@ ros/message_operations.h
 std_msgs/Header.h
 -
 
-/home/khaled/Tommy_ws/devel/include/realsense2_camera/IMUInfo.h
+/home/khaled/feri_ws/devel/include/realsense2_camera/IMUInfo.h
 string
 -
 vector
@@ -40,9 +40,9 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/khaled/Tommy_ws/src/realsense-ros/realsense2_camera/include/base_realsense_node.h
+/home/khaled/feri_ws/src/realsense-ros/realsense2_camera/include/base_realsense_node.h
 ../include/realsense_node_factory.h
-/home/khaled/Tommy_ws/src/realsense-ros/realsense2_camera/include/realsense_node_factory.h
+/home/khaled/feri_ws/src/realsense-ros/realsense2_camera/include/realsense_node_factory.h
 ddynamic_reconfigure/ddynamic_reconfigure.h
 -
 diagnostic_updater/diagnostic_updater.h
@@ -74,11 +74,11 @@ atomic
 thread
 -
 
-/home/khaled/Tommy_ws/src/realsense-ros/realsense2_camera/include/constants.h
+/home/khaled/feri_ws/src/realsense-ros/realsense2_camera/include/constants.h
 string
 -
 
-/home/khaled/Tommy_ws/src/realsense-ros/realsense2_camera/include/realsense_node_factory.h
+/home/khaled/feri_ws/src/realsense-ros/realsense2_camera/include/realsense_node_factory.h
 pluginlib/class_list_macros.h
 -
 nodelet/nodelet.h
@@ -114,15 +114,15 @@ fstream
 thread
 -
 
-/home/khaled/Tommy_ws/src/realsense-ros/realsense2_camera/include/t265_realsense_node.h
+/home/khaled/feri_ws/src/realsense-ros/realsense2_camera/include/t265_realsense_node.h
 base_realsense_node.h
 -
 
-/home/khaled/Tommy_ws/src/realsense-ros/realsense2_camera/src/base_realsense_node.cpp
+/home/khaled/feri_ws/src/realsense-ros/realsense2_camera/src/base_realsense_node.cpp
 ../include/base_realsense_node.h
-/home/khaled/Tommy_ws/src/realsense-ros/realsense2_camera/include/base_realsense_node.h
+/home/khaled/feri_ws/src/realsense-ros/realsense2_camera/include/base_realsense_node.h
 assert.h
-/home/khaled/Tommy_ws/src/realsense-ros/realsense2_camera/src/assert.h
+/home/khaled/feri_ws/src/realsense-ros/realsense2_camera/src/assert.h
 boost/algorithm/string.hpp
 -
 algorithm
@@ -132,13 +132,13 @@ cctype
 mutex
 -
 
-/home/khaled/Tommy_ws/src/realsense-ros/realsense2_camera/src/realsense_node_factory.cpp
+/home/khaled/feri_ws/src/realsense-ros/realsense2_camera/src/realsense_node_factory.cpp
 ../include/realsense_node_factory.h
-/home/khaled/Tommy_ws/src/realsense-ros/realsense2_camera/include/realsense_node_factory.h
+/home/khaled/feri_ws/src/realsense-ros/realsense2_camera/include/realsense_node_factory.h
 ../include/base_realsense_node.h
-/home/khaled/Tommy_ws/src/realsense-ros/realsense2_camera/include/base_realsense_node.h
+/home/khaled/feri_ws/src/realsense-ros/realsense2_camera/include/base_realsense_node.h
 ../include/t265_realsense_node.h
-/home/khaled/Tommy_ws/src/realsense-ros/realsense2_camera/include/t265_realsense_node.h
+/home/khaled/feri_ws/src/realsense-ros/realsense2_camera/include/t265_realsense_node.h
 iostream
 -
 map
@@ -154,9 +154,9 @@ thread
 regex
 -
 
-/home/khaled/Tommy_ws/src/realsense-ros/realsense2_camera/src/t265_realsense_node.cpp
+/home/khaled/feri_ws/src/realsense-ros/realsense2_camera/src/t265_realsense_node.cpp
 ../include/t265_realsense_node.h
-/home/khaled/Tommy_ws/src/realsense-ros/realsense2_camera/include/t265_realsense_node.h
+/home/khaled/feri_ws/src/realsense-ros/realsense2_camera/include/t265_realsense_node.h
 
 /opt/ros/melodic/include/class_loader/class_loader.hpp
 boost/bind.hpp

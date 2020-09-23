@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/khaled/Tommy_ws/src
+CMAKE_SOURCE_DIR = /home/khaled/feri_ws/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/khaled/Tommy_ws/build
+CMAKE_BINARY_DIR = /home/khaled/feri_ws/build
 
 # Utility rule file for dynamic_reconfigure_gencfg.
 
@@ -63,10 +63,10 @@ openni_camera/openni_camera/CMakeFiles/dynamic_reconfigure_gencfg.dir/build: dyn
 .PHONY : openni_camera/openni_camera/CMakeFiles/dynamic_reconfigure_gencfg.dir/build
 
 openni_camera/openni_camera/CMakeFiles/dynamic_reconfigure_gencfg.dir/clean:
-	cd /home/khaled/Tommy_ws/build/openni_camera/openni_camera && $(CMAKE_COMMAND) -P CMakeFiles/dynamic_reconfigure_gencfg.dir/cmake_clean.cmake
+	cd /home/khaled/feri_ws/build/openni_camera/openni_camera && $(CMAKE_COMMAND) -P CMakeFiles/dynamic_reconfigure_gencfg.dir/cmake_clean.cmake
 .PHONY : openni_camera/openni_camera/CMakeFiles/dynamic_reconfigure_gencfg.dir/clean
 
 openni_camera/openni_camera/CMakeFiles/dynamic_reconfigure_gencfg.dir/depend:
-	cd /home/khaled/Tommy_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/khaled/Tommy_ws/src /home/khaled/Tommy_ws/src/openni_camera/openni_camera /home/khaled/Tommy_ws/build /home/khaled/Tommy_ws/build/openni_camera/openni_camera /home/khaled/Tommy_ws/build/openni_camera/openni_camera/CMakeFiles/dynamic_reconfigure_gencfg.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/khaled/feri_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/khaled/feri_ws/src /home/khaled/feri_ws/src/openni_camera/openni_camera /home/khaled/feri_ws/build /home/khaled/feri_ws/build/openni_camera/openni_camera /home/khaled/feri_ws/build/openni_camera/openni_camera/CMakeFiles/dynamic_reconfigure_gencfg.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : openni_camera/openni_camera/CMakeFiles/dynamic_reconfigure_gencfg.dir/depend
 

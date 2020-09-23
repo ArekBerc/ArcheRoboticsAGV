@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/khaled/Tommy_ws/src
+CMAKE_SOURCE_DIR = /home/khaled/feri_ws/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/khaled/Tommy_ws/build
+CMAKE_BINARY_DIR = /home/khaled/feri_ws/build
 
 # Utility rule file for tf2_msgs_generate_messages_cpp.
 
@@ -63,10 +63,10 @@ realsense-ros/realsense2_camera/CMakeFiles/tf2_msgs_generate_messages_cpp.dir/bu
 .PHONY : realsense-ros/realsense2_camera/CMakeFiles/tf2_msgs_generate_messages_cpp.dir/build
 
 realsense-ros/realsense2_camera/CMakeFiles/tf2_msgs_generate_messages_cpp.dir/clean:
-	cd /home/khaled/Tommy_ws/build/realsense-ros/realsense2_camera && $(CMAKE_COMMAND) -P CMakeFiles/tf2_msgs_generate_messages_cpp.dir/cmake_clean.cmake
+	cd /home/khaled/feri_ws/build/realsense-ros/realsense2_camera && $(CMAKE_COMMAND) -P CMakeFiles/tf2_msgs_generate_messages_cpp.dir/cmake_clean.cmake
 .PHONY : realsense-ros/realsense2_camera/CMakeFiles/tf2_msgs_generate_messages_cpp.dir/clean
 
 realsense-ros/realsense2_camera/CMakeFiles/tf2_msgs_generate_messages_cpp.dir/depend:
-	cd /home/khaled/Tommy_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/khaled/Tommy_ws/src /home/khaled/Tommy_ws/src/realsense-ros/realsense2_camera /home/khaled/Tommy_ws/build /home/khaled/Tommy_ws/build/realsense-ros/realsense2_camera /home/khaled/Tommy_ws/build/realsense-ros/realsense2_camera/CMakeFiles/tf2_msgs_generate_messages_cpp.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/khaled/feri_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/khaled/feri_ws/src /home/khaled/feri_ws/src/realsense-ros/realsense2_camera /home/khaled/feri_ws/build /home/khaled/feri_ws/build/realsense-ros/realsense2_camera /home/khaled/feri_ws/build/realsense-ros/realsense2_camera/CMakeFiles/tf2_msgs_generate_messages_cpp.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : realsense-ros/realsense2_camera/CMakeFiles/tf2_msgs_generate_messages_cpp.dir/depend
 

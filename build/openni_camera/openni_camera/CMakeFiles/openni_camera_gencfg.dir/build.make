@@ -43,44 +43,44 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/khaled/Tommy_ws/src
+CMAKE_SOURCE_DIR = /home/khaled/feri_ws/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/khaled/Tommy_ws/build
+CMAKE_BINARY_DIR = /home/khaled/feri_ws/build
 
 # Utility rule file for openni_camera_gencfg.
 
 # Include the progress variables for this target.
 include openni_camera/openni_camera/CMakeFiles/openni_camera_gencfg.dir/progress.make
 
-openni_camera/openni_camera/CMakeFiles/openni_camera_gencfg: /home/khaled/Tommy_ws/devel/include/openni_camera/OpenNIConfig.h
-openni_camera/openni_camera/CMakeFiles/openni_camera_gencfg: /home/khaled/Tommy_ws/devel/lib/python2.7/dist-packages/openni_camera/cfg/OpenNIConfig.py
+openni_camera/openni_camera/CMakeFiles/openni_camera_gencfg: /home/khaled/feri_ws/devel/include/openni_camera/OpenNIConfig.h
+openni_camera/openni_camera/CMakeFiles/openni_camera_gencfg: /home/khaled/feri_ws/devel/lib/python2.7/dist-packages/openni_camera/cfg/OpenNIConfig.py
 
 
-/home/khaled/Tommy_ws/devel/include/openni_camera/OpenNIConfig.h: /home/khaled/Tommy_ws/src/openni_camera/openni_camera/cfg/OpenNI.cfg
-/home/khaled/Tommy_ws/devel/include/openni_camera/OpenNIConfig.h: /opt/ros/melodic/share/dynamic_reconfigure/templates/ConfigType.py.template
-/home/khaled/Tommy_ws/devel/include/openni_camera/OpenNIConfig.h: /opt/ros/melodic/share/dynamic_reconfigure/templates/ConfigType.h.template
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/khaled/Tommy_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating dynamic reconfigure files from cfg/OpenNI.cfg: /home/khaled/Tommy_ws/devel/include/openni_camera/OpenNIConfig.h /home/khaled/Tommy_ws/devel/lib/python2.7/dist-packages/openni_camera/cfg/OpenNIConfig.py"
-	cd /home/khaled/Tommy_ws/build/openni_camera/openni_camera && ../../catkin_generated/env_cached.sh /home/khaled/Tommy_ws/build/openni_camera/openni_camera/setup_custom_pythonpath.sh /home/khaled/Tommy_ws/src/openni_camera/openni_camera/cfg/OpenNI.cfg /opt/ros/melodic/share/dynamic_reconfigure/cmake/.. /home/khaled/Tommy_ws/devel/share/openni_camera /home/khaled/Tommy_ws/devel/include/openni_camera /home/khaled/Tommy_ws/devel/lib/python2.7/dist-packages/openni_camera
+/home/khaled/feri_ws/devel/include/openni_camera/OpenNIConfig.h: /home/khaled/feri_ws/src/openni_camera/openni_camera/cfg/OpenNI.cfg
+/home/khaled/feri_ws/devel/include/openni_camera/OpenNIConfig.h: /opt/ros/melodic/share/dynamic_reconfigure/templates/ConfigType.py.template
+/home/khaled/feri_ws/devel/include/openni_camera/OpenNIConfig.h: /opt/ros/melodic/share/dynamic_reconfigure/templates/ConfigType.h.template
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/khaled/feri_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating dynamic reconfigure files from cfg/OpenNI.cfg: /home/khaled/feri_ws/devel/include/openni_camera/OpenNIConfig.h /home/khaled/feri_ws/devel/lib/python2.7/dist-packages/openni_camera/cfg/OpenNIConfig.py"
+	cd /home/khaled/feri_ws/build/openni_camera/openni_camera && ../../catkin_generated/env_cached.sh /home/khaled/feri_ws/build/openni_camera/openni_camera/setup_custom_pythonpath.sh /home/khaled/feri_ws/src/openni_camera/openni_camera/cfg/OpenNI.cfg /opt/ros/melodic/share/dynamic_reconfigure/cmake/.. /home/khaled/feri_ws/devel/share/openni_camera /home/khaled/feri_ws/devel/include/openni_camera /home/khaled/feri_ws/devel/lib/python2.7/dist-packages/openni_camera
 
-/home/khaled/Tommy_ws/devel/share/openni_camera/docs/OpenNIConfig.dox: /home/khaled/Tommy_ws/devel/include/openni_camera/OpenNIConfig.h
-	@$(CMAKE_COMMAND) -E touch_nocreate /home/khaled/Tommy_ws/devel/share/openni_camera/docs/OpenNIConfig.dox
+/home/khaled/feri_ws/devel/share/openni_camera/docs/OpenNIConfig.dox: /home/khaled/feri_ws/devel/include/openni_camera/OpenNIConfig.h
+	@$(CMAKE_COMMAND) -E touch_nocreate /home/khaled/feri_ws/devel/share/openni_camera/docs/OpenNIConfig.dox
 
-/home/khaled/Tommy_ws/devel/share/openni_camera/docs/OpenNIConfig-usage.dox: /home/khaled/Tommy_ws/devel/include/openni_camera/OpenNIConfig.h
-	@$(CMAKE_COMMAND) -E touch_nocreate /home/khaled/Tommy_ws/devel/share/openni_camera/docs/OpenNIConfig-usage.dox
+/home/khaled/feri_ws/devel/share/openni_camera/docs/OpenNIConfig-usage.dox: /home/khaled/feri_ws/devel/include/openni_camera/OpenNIConfig.h
+	@$(CMAKE_COMMAND) -E touch_nocreate /home/khaled/feri_ws/devel/share/openni_camera/docs/OpenNIConfig-usage.dox
 
-/home/khaled/Tommy_ws/devel/lib/python2.7/dist-packages/openni_camera/cfg/OpenNIConfig.py: /home/khaled/Tommy_ws/devel/include/openni_camera/OpenNIConfig.h
-	@$(CMAKE_COMMAND) -E touch_nocreate /home/khaled/Tommy_ws/devel/lib/python2.7/dist-packages/openni_camera/cfg/OpenNIConfig.py
+/home/khaled/feri_ws/devel/lib/python2.7/dist-packages/openni_camera/cfg/OpenNIConfig.py: /home/khaled/feri_ws/devel/include/openni_camera/OpenNIConfig.h
+	@$(CMAKE_COMMAND) -E touch_nocreate /home/khaled/feri_ws/devel/lib/python2.7/dist-packages/openni_camera/cfg/OpenNIConfig.py
 
-/home/khaled/Tommy_ws/devel/share/openni_camera/docs/OpenNIConfig.wikidoc: /home/khaled/Tommy_ws/devel/include/openni_camera/OpenNIConfig.h
-	@$(CMAKE_COMMAND) -E touch_nocreate /home/khaled/Tommy_ws/devel/share/openni_camera/docs/OpenNIConfig.wikidoc
+/home/khaled/feri_ws/devel/share/openni_camera/docs/OpenNIConfig.wikidoc: /home/khaled/feri_ws/devel/include/openni_camera/OpenNIConfig.h
+	@$(CMAKE_COMMAND) -E touch_nocreate /home/khaled/feri_ws/devel/share/openni_camera/docs/OpenNIConfig.wikidoc
 
 openni_camera_gencfg: openni_camera/openni_camera/CMakeFiles/openni_camera_gencfg
-openni_camera_gencfg: /home/khaled/Tommy_ws/devel/include/openni_camera/OpenNIConfig.h
-openni_camera_gencfg: /home/khaled/Tommy_ws/devel/share/openni_camera/docs/OpenNIConfig.dox
-openni_camera_gencfg: /home/khaled/Tommy_ws/devel/share/openni_camera/docs/OpenNIConfig-usage.dox
-openni_camera_gencfg: /home/khaled/Tommy_ws/devel/lib/python2.7/dist-packages/openni_camera/cfg/OpenNIConfig.py
-openni_camera_gencfg: /home/khaled/Tommy_ws/devel/share/openni_camera/docs/OpenNIConfig.wikidoc
+openni_camera_gencfg: /home/khaled/feri_ws/devel/include/openni_camera/OpenNIConfig.h
+openni_camera_gencfg: /home/khaled/feri_ws/devel/share/openni_camera/docs/OpenNIConfig.dox
+openni_camera_gencfg: /home/khaled/feri_ws/devel/share/openni_camera/docs/OpenNIConfig-usage.dox
+openni_camera_gencfg: /home/khaled/feri_ws/devel/lib/python2.7/dist-packages/openni_camera/cfg/OpenNIConfig.py
+openni_camera_gencfg: /home/khaled/feri_ws/devel/share/openni_camera/docs/OpenNIConfig.wikidoc
 openni_camera_gencfg: openni_camera/openni_camera/CMakeFiles/openni_camera_gencfg.dir/build.make
 
 .PHONY : openni_camera_gencfg
@@ -91,10 +91,10 @@ openni_camera/openni_camera/CMakeFiles/openni_camera_gencfg.dir/build: openni_ca
 .PHONY : openni_camera/openni_camera/CMakeFiles/openni_camera_gencfg.dir/build
 
 openni_camera/openni_camera/CMakeFiles/openni_camera_gencfg.dir/clean:
-	cd /home/khaled/Tommy_ws/build/openni_camera/openni_camera && $(CMAKE_COMMAND) -P CMakeFiles/openni_camera_gencfg.dir/cmake_clean.cmake
+	cd /home/khaled/feri_ws/build/openni_camera/openni_camera && $(CMAKE_COMMAND) -P CMakeFiles/openni_camera_gencfg.dir/cmake_clean.cmake
 .PHONY : openni_camera/openni_camera/CMakeFiles/openni_camera_gencfg.dir/clean
 
 openni_camera/openni_camera/CMakeFiles/openni_camera_gencfg.dir/depend:
-	cd /home/khaled/Tommy_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/khaled/Tommy_ws/src /home/khaled/Tommy_ws/src/openni_camera/openni_camera /home/khaled/Tommy_ws/build /home/khaled/Tommy_ws/build/openni_camera/openni_camera /home/khaled/Tommy_ws/build/openni_camera/openni_camera/CMakeFiles/openni_camera_gencfg.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/khaled/feri_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/khaled/feri_ws/src /home/khaled/feri_ws/src/openni_camera/openni_camera /home/khaled/feri_ws/build /home/khaled/feri_ws/build/openni_camera/openni_camera /home/khaled/feri_ws/build/openni_camera/openni_camera/CMakeFiles/openni_camera_gencfg.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : openni_camera/openni_camera/CMakeFiles/openni_camera_gencfg.dir/depend
 

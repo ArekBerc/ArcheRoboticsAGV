@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/khaled/Tommy_ws/src/openni_camera/openni_camera/src/nodelets/driver.cpp" "/home/khaled/Tommy_ws/build/openni_camera/openni_camera/CMakeFiles/openni_nodelet.dir/src/nodelets/driver.cpp.o"
+  "/home/khaled/feri_ws/src/openni_camera/openni_camera/src/nodelets/driver.cpp" "/home/khaled/feri_ws/build/openni_camera/openni_camera/CMakeFiles/openni_nodelet.dir/src/nodelets/driver.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
@@ -17,8 +17,8 @@ set(CMAKE_TARGET_DEFINITIONS_CXX
 
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
-  "/home/khaled/Tommy_ws/devel/include"
-  "/home/khaled/Tommy_ws/src/openni_camera/openni_camera/include"
+  "/home/khaled/feri_ws/devel/include"
+  "/home/khaled/feri_ws/src/openni_camera/openni_camera/include"
   "/usr/include/ni"
   "/opt/ros/melodic/include"
   "/opt/ros/melodic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp"
@@ -26,7 +26,7 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
 
 # Targets to which this target links.
 set(CMAKE_TARGET_LINKED_INFO_FILES
-  "/home/khaled/Tommy_ws/build/openni_camera/openni_camera/CMakeFiles/openni_driver.dir/DependInfo.cmake"
+  "/home/khaled/feri_ws/build/openni_camera/openni_camera/CMakeFiles/openni_driver.dir/DependInfo.cmake"
   )
 
 # Fortran module output directory.

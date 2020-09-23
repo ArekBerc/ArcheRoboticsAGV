@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/openni_node.dir/src/nodes/openni_node.cpp.o"
-  "/home/khaled/Tommy_ws/devel/lib/openni_camera/openni_node.pdb"
-  "/home/khaled/Tommy_ws/devel/lib/openni_camera/openni_node"
+  "/home/khaled/feri_ws/devel/lib/openni_camera/openni_node.pdb"
+  "/home/khaled/feri_ws/devel/lib/openni_camera/openni_node"
 )
 
 # Per-language clean rules from dependency scanning.

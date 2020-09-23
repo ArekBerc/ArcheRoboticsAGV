@@ -11,8 +11,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/openni_driver.dir/src/openni_image_rgb24.cpp.o"
   "CMakeFiles/openni_driver.dir/src/openni_ir_image.cpp.o"
   "CMakeFiles/openni_driver.dir/src/openni_depth_image.cpp.o"
-  "/home/khaled/Tommy_ws/devel/lib/libopenni_driver.pdb"
-  "/home/khaled/Tommy_ws/devel/lib/libopenni_driver.so"
+  "/home/khaled/feri_ws/devel/lib/libopenni_driver.pdb"
+  "/home/khaled/feri_ws/devel/lib/libopenni_driver.so"
 )
 
 # Per-language clean rules from dependency scanning.

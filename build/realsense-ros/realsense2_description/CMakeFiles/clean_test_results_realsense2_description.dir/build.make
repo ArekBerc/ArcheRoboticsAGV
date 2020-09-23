@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/khaled/Tommy_ws/src
+CMAKE_SOURCE_DIR = /home/khaled/feri_ws/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/khaled/Tommy_ws/build
+CMAKE_BINARY_DIR = /home/khaled/feri_ws/build
 
 # Utility rule file for clean_test_results_realsense2_description.
 
@@ -54,7 +54,7 @@ CMAKE_BINARY_DIR = /home/khaled/Tommy_ws/build
 include realsense-ros/realsense2_description/CMakeFiles/clean_test_results_realsense2_description.dir/progress.make
 
 realsense-ros/realsense2_description/CMakeFiles/clean_test_results_realsense2_description:
-	cd /home/khaled/Tommy_ws/build/realsense-ros/realsense2_description && /usr/bin/python2 /opt/ros/melodic/share/catkin/cmake/test/remove_test_results.py /home/khaled/Tommy_ws/build/test_results/realsense2_description
+	cd /home/khaled/feri_ws/build/realsense-ros/realsense2_description && /usr/bin/python2 /opt/ros/melodic/share/catkin/cmake/test/remove_test_results.py /home/khaled/feri_ws/build/test_results/realsense2_description
 
 clean_test_results_realsense2_description: realsense-ros/realsense2_description/CMakeFiles/clean_test_results_realsense2_description
 clean_test_results_realsense2_description: realsense-ros/realsense2_description/CMakeFiles/clean_test_results_realsense2_description.dir/build.make
@@ -67,10 +67,10 @@ realsense-ros/realsense2_description/CMakeFiles/clean_test_results_realsense2_de
 .PHONY : realsense-ros/realsense2_description/CMakeFiles/clean_test_results_realsense2_description.dir/build
 
 realsense-ros/realsense2_description/CMakeFiles/clean_test_results_realsense2_description.dir/clean:
-	cd /home/khaled/Tommy_ws/build/realsense-ros/realsense2_description && $(CMAKE_COMMAND) -P CMakeFiles/clean_test_results_realsense2_description.dir/cmake_clean.cmake
+	cd /home/khaled/feri_ws/build/realsense-ros/realsense2_description && $(CMAKE_COMMAND) -P CMakeFiles/clean_test_results_realsense2_description.dir/cmake_clean.cmake
 .PHONY : realsense-ros/realsense2_description/CMakeFiles/clean_test_results_realsense2_description.dir/clean
 
 realsense-ros/realsense2_description/CMakeFiles/clean_test_results_realsense2_description.dir/depend:
-	cd /home/khaled/Tommy_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/khaled/Tommy_ws/src /home/khaled/Tommy_ws/src/realsense-ros/realsense2_description /home/khaled/Tommy_ws/build /home/khaled/Tommy_ws/build/realsense-ros/realsense2_description /home/khaled/Tommy_ws/build/realsense-ros/realsense2_description/CMakeFiles/clean_test_results_realsense2_description.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/khaled/feri_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/khaled/feri_ws/src /home/khaled/feri_ws/src/realsense-ros/realsense2_description /home/khaled/feri_ws/build /home/khaled/feri_ws/build/realsense-ros/realsense2_description /home/khaled/feri_ws/build/realsense-ros/realsense2_description/CMakeFiles/clean_test_results_realsense2_description.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : realsense-ros/realsense2_description/CMakeFiles/clean_test_results_realsense2_description.dir/depend
 

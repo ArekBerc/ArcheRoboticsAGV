@@ -1,0 +1,8 @@
+prefix=/home/khaled/feri_ws/install
+
+Name: ddynamic_reconfigure
+Description: Description of ddynamic_reconfigure
+Version: 1.0.0
+Cflags: -I${prefix}/include
+Libs: -L${prefix}/lib -lddynamic_reconfigure
+Requires: 

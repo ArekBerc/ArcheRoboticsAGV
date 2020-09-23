@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/openni_nodelet.dir/src/nodelets/driver.cpp.o"
-  "/home/khaled/Tommy_ws/devel/lib/libopenni_nodelet.pdb"
-  "/home/khaled/Tommy_ws/devel/lib/libopenni_nodelet.so"
+  "/home/khaled/feri_ws/devel/lib/libopenni_nodelet.pdb"
+  "/home/khaled/feri_ws/devel/lib/libopenni_nodelet.so"
 )
 
 # Per-language clean rules from dependency scanning.

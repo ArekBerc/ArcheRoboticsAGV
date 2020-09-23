@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/khaled/Tommy_ws/src
+CMAKE_SOURCE_DIR = /home/khaled/feri_ws/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/khaled/Tommy_ws/build
+CMAKE_BINARY_DIR = /home/khaled/feri_ws/build
 
 # Utility rule file for sensor_msgs_generate_messages_py.
 
@@ -63,10 +63,10 @@ openni_camera/openni_camera/CMakeFiles/sensor_msgs_generate_messages_py.dir/buil
 .PHONY : openni_camera/openni_camera/CMakeFiles/sensor_msgs_generate_messages_py.dir/build
 
 openni_camera/openni_camera/CMakeFiles/sensor_msgs_generate_messages_py.dir/clean:
-	cd /home/khaled/Tommy_ws/build/openni_camera/openni_camera && $(CMAKE_COMMAND) -P CMakeFiles/sensor_msgs_generate_messages_py.dir/cmake_clean.cmake
+	cd /home/khaled/feri_ws/build/openni_camera/openni_camera && $(CMAKE_COMMAND) -P CMakeFiles/sensor_msgs_generate_messages_py.dir/cmake_clean.cmake
 .PHONY : openni_camera/openni_camera/CMakeFiles/sensor_msgs_generate_messages_py.dir/clean
 
 openni_camera/openni_camera/CMakeFiles/sensor_msgs_generate_messages_py.dir/depend:
-	cd /home/khaled/Tommy_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/khaled/Tommy_ws/src /home/khaled/Tommy_ws/src/openni_camera/openni_camera /home/khaled/Tommy_ws/build /home/khaled/Tommy_ws/build/openni_camera/openni_camera /home/khaled/Tommy_ws/build/openni_camera/openni_camera/CMakeFiles/sensor_msgs_generate_messages_py.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/khaled/feri_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/khaled/feri_ws/src /home/khaled/feri_ws/src/openni_camera/openni_camera /home/khaled/feri_ws/build /home/khaled/feri_ws/build/openni_camera/openni_camera /home/khaled/feri_ws/build/openni_camera/openni_camera/CMakeFiles/sensor_msgs_generate_messages_py.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : openni_camera/openni_camera/CMakeFiles/sensor_msgs_generate_messages_py.dir/depend
 

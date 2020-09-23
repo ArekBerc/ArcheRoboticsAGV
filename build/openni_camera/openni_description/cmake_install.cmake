@@ -1,8 +1,8 @@
-# Install script for directory: /home/khaled/Tommy_ws/src/openni_camera/openni_description
+# Install script for directory: /home/khaled/feri_ws/src/openni_camera/openni_description
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/khaled/Tommy_ws/install")
+  set(CMAKE_INSTALL_PREFIX "/home/khaled/feri_ws/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -38,25 +38,25 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/khaled/Tommy_ws/build/openni_camera/openni_description/catkin_generated/installspace/openni_description.pc")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/khaled/feri_ws/build/openni_camera/openni_description/catkin_generated/installspace/openni_description.pc")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/openni_description/cmake" TYPE FILE FILES
-    "/home/khaled/Tommy_ws/build/openni_camera/openni_description/catkin_generated/installspace/openni_descriptionConfig.cmake"
-    "/home/khaled/Tommy_ws/build/openni_camera/openni_description/catkin_generated/installspace/openni_descriptionConfig-version.cmake"
+    "/home/khaled/feri_ws/build/openni_camera/openni_description/catkin_generated/installspace/openni_descriptionConfig.cmake"
+    "/home/khaled/feri_ws/build/openni_camera/openni_description/catkin_generated/installspace/openni_descriptionConfig-version.cmake"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/openni_description" TYPE FILE FILES "/home/khaled/Tommy_ws/src/openni_camera/openni_description/package.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/openni_description" TYPE FILE FILES "/home/khaled/feri_ws/src/openni_camera/openni_description/package.xml")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/openni_description" TYPE DIRECTORY FILES "/home/khaled/Tommy_ws/src/openni_camera/openni_description/model")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/openni_description" TYPE DIRECTORY FILES "/home/khaled/feri_ws/src/openni_camera/openni_description/model")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/openni_description" TYPE DIRECTORY FILES "/home/khaled/Tommy_ws/src/openni_camera/openni_description/test" USE_SOURCE_PERMISSIONS)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/openni_description" TYPE DIRECTORY FILES "/home/khaled/feri_ws/src/openni_camera/openni_description/test" USE_SOURCE_PERMISSIONS)
 endif()
 

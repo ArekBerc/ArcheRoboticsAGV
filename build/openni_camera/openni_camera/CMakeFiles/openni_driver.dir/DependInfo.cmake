@@ -4,18 +4,18 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/khaled/Tommy_ws/src/openni_camera/openni_camera/src/openni_depth_image.cpp" "/home/khaled/Tommy_ws/build/openni_camera/openni_camera/CMakeFiles/openni_driver.dir/src/openni_depth_image.cpp.o"
-  "/home/khaled/Tommy_ws/src/openni_camera/openni_camera/src/openni_device.cpp" "/home/khaled/Tommy_ws/build/openni_camera/openni_camera/CMakeFiles/openni_driver.dir/src/openni_device.cpp.o"
-  "/home/khaled/Tommy_ws/src/openni_camera/openni_camera/src/openni_device_kinect.cpp" "/home/khaled/Tommy_ws/build/openni_camera/openni_camera/CMakeFiles/openni_driver.dir/src/openni_device_kinect.cpp.o"
-  "/home/khaled/Tommy_ws/src/openni_camera/openni_camera/src/openni_device_oni.cpp" "/home/khaled/Tommy_ws/build/openni_camera/openni_camera/CMakeFiles/openni_driver.dir/src/openni_device_oni.cpp.o"
-  "/home/khaled/Tommy_ws/src/openni_camera/openni_camera/src/openni_device_primesense.cpp" "/home/khaled/Tommy_ws/build/openni_camera/openni_camera/CMakeFiles/openni_driver.dir/src/openni_device_primesense.cpp.o"
-  "/home/khaled/Tommy_ws/src/openni_camera/openni_camera/src/openni_device_xtion.cpp" "/home/khaled/Tommy_ws/build/openni_camera/openni_camera/CMakeFiles/openni_driver.dir/src/openni_device_xtion.cpp.o"
-  "/home/khaled/Tommy_ws/src/openni_camera/openni_camera/src/openni_driver.cpp" "/home/khaled/Tommy_ws/build/openni_camera/openni_camera/CMakeFiles/openni_driver.dir/src/openni_driver.cpp.o"
-  "/home/khaled/Tommy_ws/src/openni_camera/openni_camera/src/openni_exception.cpp" "/home/khaled/Tommy_ws/build/openni_camera/openni_camera/CMakeFiles/openni_driver.dir/src/openni_exception.cpp.o"
-  "/home/khaled/Tommy_ws/src/openni_camera/openni_camera/src/openni_image_bayer_grbg.cpp" "/home/khaled/Tommy_ws/build/openni_camera/openni_camera/CMakeFiles/openni_driver.dir/src/openni_image_bayer_grbg.cpp.o"
-  "/home/khaled/Tommy_ws/src/openni_camera/openni_camera/src/openni_image_rgb24.cpp" "/home/khaled/Tommy_ws/build/openni_camera/openni_camera/CMakeFiles/openni_driver.dir/src/openni_image_rgb24.cpp.o"
-  "/home/khaled/Tommy_ws/src/openni_camera/openni_camera/src/openni_image_yuv_422.cpp" "/home/khaled/Tommy_ws/build/openni_camera/openni_camera/CMakeFiles/openni_driver.dir/src/openni_image_yuv_422.cpp.o"
-  "/home/khaled/Tommy_ws/src/openni_camera/openni_camera/src/openni_ir_image.cpp" "/home/khaled/Tommy_ws/build/openni_camera/openni_camera/CMakeFiles/openni_driver.dir/src/openni_ir_image.cpp.o"
+  "/home/khaled/feri_ws/src/openni_camera/openni_camera/src/openni_depth_image.cpp" "/home/khaled/feri_ws/build/openni_camera/openni_camera/CMakeFiles/openni_driver.dir/src/openni_depth_image.cpp.o"
+  "/home/khaled/feri_ws/src/openni_camera/openni_camera/src/openni_device.cpp" "/home/khaled/feri_ws/build/openni_camera/openni_camera/CMakeFiles/openni_driver.dir/src/openni_device.cpp.o"
+  "/home/khaled/feri_ws/src/openni_camera/openni_camera/src/openni_device_kinect.cpp" "/home/khaled/feri_ws/build/openni_camera/openni_camera/CMakeFiles/openni_driver.dir/src/openni_device_kinect.cpp.o"
+  "/home/khaled/feri_ws/src/openni_camera/openni_camera/src/openni_device_oni.cpp" "/home/khaled/feri_ws/build/openni_camera/openni_camera/CMakeFiles/openni_driver.dir/src/openni_device_oni.cpp.o"
+  "/home/khaled/feri_ws/src/openni_camera/openni_camera/src/openni_device_primesense.cpp" "/home/khaled/feri_ws/build/openni_camera/openni_camera/CMakeFiles/openni_driver.dir/src/openni_device_primesense.cpp.o"
+  "/home/khaled/feri_ws/src/openni_camera/openni_camera/src/openni_device_xtion.cpp" "/home/khaled/feri_ws/build/openni_camera/openni_camera/CMakeFiles/openni_driver.dir/src/openni_device_xtion.cpp.o"
+  "/home/khaled/feri_ws/src/openni_camera/openni_camera/src/openni_driver.cpp" "/home/khaled/feri_ws/build/openni_camera/openni_camera/CMakeFiles/openni_driver.dir/src/openni_driver.cpp.o"
+  "/home/khaled/feri_ws/src/openni_camera/openni_camera/src/openni_exception.cpp" "/home/khaled/feri_ws/build/openni_camera/openni_camera/CMakeFiles/openni_driver.dir/src/openni_exception.cpp.o"
+  "/home/khaled/feri_ws/src/openni_camera/openni_camera/src/openni_image_bayer_grbg.cpp" "/home/khaled/feri_ws/build/openni_camera/openni_camera/CMakeFiles/openni_driver.dir/src/openni_image_bayer_grbg.cpp.o"
+  "/home/khaled/feri_ws/src/openni_camera/openni_camera/src/openni_image_rgb24.cpp" "/home/khaled/feri_ws/build/openni_camera/openni_camera/CMakeFiles/openni_driver.dir/src/openni_image_rgb24.cpp.o"
+  "/home/khaled/feri_ws/src/openni_camera/openni_camera/src/openni_image_yuv_422.cpp" "/home/khaled/feri_ws/build/openni_camera/openni_camera/CMakeFiles/openni_driver.dir/src/openni_image_yuv_422.cpp.o"
+  "/home/khaled/feri_ws/src/openni_camera/openni_camera/src/openni_ir_image.cpp" "/home/khaled/feri_ws/build/openni_camera/openni_camera/CMakeFiles/openni_driver.dir/src/openni_ir_image.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
@@ -28,8 +28,8 @@ set(CMAKE_TARGET_DEFINITIONS_CXX
 
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
-  "/home/khaled/Tommy_ws/devel/include"
-  "/home/khaled/Tommy_ws/src/openni_camera/openni_camera/include"
+  "/home/khaled/feri_ws/devel/include"
+  "/home/khaled/feri_ws/src/openni_camera/openni_camera/include"
   "/usr/include/ni"
   "/opt/ros/melodic/include"
   "/opt/ros/melodic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp"

@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/khaled/Tommy_ws/src
+CMAKE_SOURCE_DIR = /home/khaled/feri_ws/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/khaled/Tommy_ws/build
+CMAKE_BINARY_DIR = /home/khaled/feri_ws/build
 
 # Utility rule file for _realsense2_camera_generate_messages_check_deps_Extrinsics.
 
@@ -54,7 +54,7 @@ CMAKE_BINARY_DIR = /home/khaled/Tommy_ws/build
 include realsense-ros/realsense2_camera/CMakeFiles/_realsense2_camera_generate_messages_check_deps_Extrinsics.dir/progress.make
 
 realsense-ros/realsense2_camera/CMakeFiles/_realsense2_camera_generate_messages_check_deps_Extrinsics:
-	cd /home/khaled/Tommy_ws/build/realsense-ros/realsense2_camera && ../../catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/genmsg/cmake/../../../lib/genmsg/genmsg_check_deps.py realsense2_camera /home/khaled/Tommy_ws/src/realsense-ros/realsense2_camera/msg/Extrinsics.msg std_msgs/Header
+	cd /home/khaled/feri_ws/build/realsense-ros/realsense2_camera && ../../catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/genmsg/cmake/../../../lib/genmsg/genmsg_check_deps.py realsense2_camera /home/khaled/feri_ws/src/realsense-ros/realsense2_camera/msg/Extrinsics.msg std_msgs/Header
 
 _realsense2_camera_generate_messages_check_deps_Extrinsics: realsense-ros/realsense2_camera/CMakeFiles/_realsense2_camera_generate_messages_check_deps_Extrinsics
 _realsense2_camera_generate_messages_check_deps_Extrinsics: realsense-ros/realsense2_camera/CMakeFiles/_realsense2_camera_generate_messages_check_deps_Extrinsics.dir/build.make
@@ -67,10 +67,10 @@ realsense-ros/realsense2_camera/CMakeFiles/_realsense2_camera_generate_messages_
 .PHONY : realsense-ros/realsense2_camera/CMakeFiles/_realsense2_camera_generate_messages_check_deps_Extrinsics.dir/build
 
 realsense-ros/realsense2_camera/CMakeFiles/_realsense2_camera_generate_messages_check_deps_Extrinsics.dir/clean:
-	cd /home/khaled/Tommy_ws/build/realsense-ros/realsense2_camera && $(CMAKE_COMMAND) -P CMakeFiles/_realsense2_camera_generate_messages_check_deps_Extrinsics.dir/cmake_clean.cmake
+	cd /home/khaled/feri_ws/build/realsense-ros/realsense2_camera && $(CMAKE_COMMAND) -P CMakeFiles/_realsense2_camera_generate_messages_check_deps_Extrinsics.dir/cmake_clean.cmake
 .PHONY : realsense-ros/realsense2_camera/CMakeFiles/_realsense2_camera_generate_messages_check_deps_Extrinsics.dir/clean
 
 realsense-ros/realsense2_camera/CMakeFiles/_realsense2_camera_generate_messages_check_deps_Extrinsics.dir/depend:
-	cd /home/khaled/Tommy_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/khaled/Tommy_ws/src /home/khaled/Tommy_ws/src/realsense-ros/realsense2_camera /home/khaled/Tommy_ws/build /home/khaled/Tommy_ws/build/realsense-ros/realsense2_camera /home/khaled/Tommy_ws/build/realsense-ros/realsense2_camera/CMakeFiles/_realsense2_camera_generate_messages_check_deps_Extrinsics.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/khaled/feri_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/khaled/feri_ws/src /home/khaled/feri_ws/src/realsense-ros/realsense2_camera /home/khaled/feri_ws/build /home/khaled/feri_ws/build/realsense-ros/realsense2_camera /home/khaled/feri_ws/build/realsense-ros/realsense2_camera/CMakeFiles/_realsense2_camera_generate_messages_check_deps_Extrinsics.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : realsense-ros/realsense2_camera/CMakeFiles/_realsense2_camera_generate_messages_check_deps_Extrinsics.dir/depend
 

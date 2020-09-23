@@ -1,8 +1,8 @@
 file(REMOVE_RECURSE
   "CMakeFiles/realsense_gazebo_plugin.dir/src/RealSensePlugin.cpp.o"
   "CMakeFiles/realsense_gazebo_plugin.dir/src/gazebo_ros_realsense.cpp.o"
-  "/home/khaled/Tommy_ws/devel/lib/librealsense_gazebo_plugin.pdb"
-  "/home/khaled/Tommy_ws/devel/lib/librealsense_gazebo_plugin.so"
+  "/home/khaled/feri_ws/devel/lib/librealsense_gazebo_plugin.pdb"
+  "/home/khaled/feri_ws/devel/lib/librealsense_gazebo_plugin.so"
 )
 
 # Per-language clean rules from dependency scanning.

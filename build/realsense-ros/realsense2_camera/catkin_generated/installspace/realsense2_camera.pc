@@ -1,4 +1,4 @@
-prefix=/home/khaled/Tommy_ws/install
+prefix=/home/khaled/feri_ws/install
 
 Name: realsense2_camera
 Description: Description of realsense2_camera

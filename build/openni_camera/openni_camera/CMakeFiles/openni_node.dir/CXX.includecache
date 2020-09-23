@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/khaled/Tommy_ws/src/openni_camera/openni_camera/src/nodes/openni_node.cpp
+/home/khaled/feri_ws/src/openni_camera/openni_camera/src/nodes/openni_node.cpp
 ros/ros.h
 -
 nodelet/loader.h

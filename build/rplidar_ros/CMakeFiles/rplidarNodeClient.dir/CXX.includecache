@@ -6,11 +6,11 @@
 
 #IncludeRegexTransform: 
 
-/home/khaled/Tommy_ws/src/rplidar_ros/src/client.cpp
+/home/khaled/feri_ws/src/rplidar_ros/src/client.cpp
 ros/ros.h
-/home/khaled/Tommy_ws/src/rplidar_ros/src/ros/ros.h
+/home/khaled/feri_ws/src/rplidar_ros/src/ros/ros.h
 sensor_msgs/LaserScan.h
-/home/khaled/Tommy_ws/src/rplidar_ros/src/sensor_msgs/LaserScan.h
+/home/khaled/feri_ws/src/rplidar_ros/src/sensor_msgs/LaserScan.h
 
 /opt/ros/melodic/include/ros/advertise_options.h
 ros/forwards.h

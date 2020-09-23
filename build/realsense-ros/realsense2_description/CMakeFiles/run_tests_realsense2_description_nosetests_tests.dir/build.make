@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/khaled/Tommy_ws/src
+CMAKE_SOURCE_DIR = /home/khaled/feri_ws/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/khaled/Tommy_ws/build
+CMAKE_BINARY_DIR = /home/khaled/feri_ws/build
 
 # Utility rule file for run_tests_realsense2_description_nosetests_tests.
 
@@ -54,7 +54,7 @@ CMAKE_BINARY_DIR = /home/khaled/Tommy_ws/build
 include realsense-ros/realsense2_description/CMakeFiles/run_tests_realsense2_description_nosetests_tests.dir/progress.make
 
 realsense-ros/realsense2_description/CMakeFiles/run_tests_realsense2_description_nosetests_tests:
-	cd /home/khaled/Tommy_ws/build/realsense-ros/realsense2_description && ../../catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/catkin/cmake/test/run_tests.py /home/khaled/Tommy_ws/build/test_results/realsense2_description/nosetests-tests.xml "\"/usr/bin/cmake\" -E make_directory /home/khaled/Tommy_ws/build/test_results/realsense2_description" "/home/khaled/.local/bin/nosetests-2.7 -P --process-timeout=60 --where=/home/khaled/Tommy_ws/src/realsense-ros/realsense2_description/tests --with-xunit --xunit-file=/home/khaled/Tommy_ws/build/test_results/realsense2_description/nosetests-tests.xml"
+	cd /home/khaled/feri_ws/build/realsense-ros/realsense2_description && ../../catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/catkin/cmake/test/run_tests.py /home/khaled/feri_ws/build/test_results/realsense2_description/nosetests-tests.xml "\"/usr/bin/cmake\" -E make_directory /home/khaled/feri_ws/build/test_results/realsense2_description" "/home/khaled/.local/bin/nosetests-2.7 -P --process-timeout=60 --where=/home/khaled/feri_ws/src/realsense-ros/realsense2_description/tests --with-xunit --xunit-file=/home/khaled/feri_ws/build/test_results/realsense2_description/nosetests-tests.xml"
 
 run_tests_realsense2_description_nosetests_tests: realsense-ros/realsense2_description/CMakeFiles/run_tests_realsense2_description_nosetests_tests
 run_tests_realsense2_description_nosetests_tests: realsense-ros/realsense2_description/CMakeFiles/run_tests_realsense2_description_nosetests_tests.dir/build.make
@@ -67,10 +67,10 @@ realsense-ros/realsense2_description/CMakeFiles/run_tests_realsense2_description
 .PHONY : realsense-ros/realsense2_description/CMakeFiles/run_tests_realsense2_description_nosetests_tests.dir/build
 
 realsense-ros/realsense2_description/CMakeFiles/run_tests_realsense2_description_nosetests_tests.dir/clean:
-	cd /home/khaled/Tommy_ws/build/realsense-ros/realsense2_description && $(CMAKE_COMMAND) -P CMakeFiles/run_tests_realsense2_description_nosetests_tests.dir/cmake_clean.cmake
+	cd /home/khaled/feri_ws/build/realsense-ros/realsense2_description && $(CMAKE_COMMAND) -P CMakeFiles/run_tests_realsense2_description_nosetests_tests.dir/cmake_clean.cmake
 .PHONY : realsense-ros/realsense2_description/CMakeFiles/run_tests_realsense2_description_nosetests_tests.dir/clean
 
 realsense-ros/realsense2_description/CMakeFiles/run_tests_realsense2_description_nosetests_tests.dir/depend:
-	cd /home/khaled/Tommy_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/khaled/Tommy_ws/src /home/khaled/Tommy_ws/src/realsense-ros/realsense2_description /home/khaled/Tommy_ws/build /home/khaled/Tommy_ws/build/realsense-ros/realsense2_description /home/khaled/Tommy_ws/build/realsense-ros/realsense2_description/CMakeFiles/run_tests_realsense2_description_nosetests_tests.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/khaled/feri_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/khaled/feri_ws/src /home/khaled/feri_ws/src/realsense-ros/realsense2_description /home/khaled/feri_ws/build /home/khaled/feri_ws/build/realsense-ros/realsense2_description /home/khaled/feri_ws/build/realsense-ros/realsense2_description/CMakeFiles/run_tests_realsense2_description_nosetests_tests.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : realsense-ros/realsense2_description/CMakeFiles/run_tests_realsense2_description_nosetests_tests.dir/depend
 

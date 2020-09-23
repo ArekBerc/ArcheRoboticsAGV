@@ -4,5 +4,5 @@ PROJECT_PKG_CONFIG_INCLUDE_DIRS = "".split(';') if "" != "" else []
 PROJECT_CATKIN_DEPENDS = "".replace(';', ' ')
 PKG_CONFIG_LIBRARIES_WITH_PREFIX = "".split(';') if "" != "" else []
 PROJECT_NAME = "openni_description"
-PROJECT_SPACE_DIR = "/home/khaled/Tommy_ws/install"
+PROJECT_SPACE_DIR = "/home/khaled/feri_ws/install"
 PROJECT_VERSION = "1.11.1"
